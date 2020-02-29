@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #3e8a25;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 70px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 60%; /* IE10 */
+  flex: 60%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<head>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Rachel E. McNew</h1>
+  <p>A website created by yours truly.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <center><h2>All About Rachel</h2>
+    <h5>Photo of me:</h5>
+	<img src="Headshott.jpg" width="205" height="205" alt="Headshot of Rachel" id="pic" />
+    <p> I am a senior at the University of South Florida majoring in Managamenet Information Systems and Business Analytics. My concentraton is in Cyber Security. I have worked for a Global Steel Company named Gerdau for almost a year now. I am a part of their Global Information Security team. I have a passion for what I do and would love to hear your interests too. 
+    <br> </br>
+	<br> </br>
+	<br> </br>
+	
+	<h3>ADDITIONAL INFORMATION</h3>
+    <p>To view my complete resume, projects and contact information, please refer to the buttons below.</p>
+	
+	 <dd>
+			<button onclick="alert('Connect with me on LinkedIn @ https://www.linkedin.com/in/rachel-mcnew')">Resume</button>
+			
+			<button onclick="alert('Please call me at (813-399-1923)')">Phone</button>
+			
+			<button onclick="alert('Please email me at mcnewr@mail.usf.edu')">Email</button>
+			
+			<button onclick="alert('Please email me at https://github.com/')">Projects</button>
+			</dd>
+            
+			
+			
+            <dd class="clear"></dd>
+			</center>
+    
+  </div>
+  <div class="main">
+    <h2>Resume/Academic History</h2>
+    <h5> Pictured below is the beautiful University of South Florida, where I study at the Muma College of Business.</h5>
+    <img src="USF.jpg" width="700" height="205" alt="Picture of USF" id="pic" />
+	
+	<p> <strong> Academic History </strong> </p>
+    
+    <p>University of South Florida, Muma College of Business | Tampa, FL | May 2020 (Expected)
+Bachelor of Business Administration Major: Management Information Systems and Business Analytics
+Concentration: Cybersecurity
+
+</p>
+
+	<p>
+Ohio University, College of Business | Athens, OH | August 2015 – August 2017
+Bachelor of Business Administration Major: Management Information Systems and Business Analytics
+</p>
+
+	<p> <strong> Professional Experience </strong> </p>
+	<p> <i> Gerdau | Tampa, Fl | May 2019 – May 2020 (Graduation) </i>
+<p>Information Security Intern</p>
+<p>▪	Supported the Internal and External Audit SOX tests produced by KPMG.</p>
+<p>▪	Completed the review process for security policies, procedures and guidelines.</p>
+<p>▪	Created security awareness trainings and campaigns for all employees.</p>
+<p>▪	Assisted in vulnerability management procedures by cleaning up Active Directory and installing SEP on all hosts.</p>
+<p>▪	Reviewed all Critical Directories and implemented a new process with guidelines.</p>
+<p>▪	Monitored all phishing and malicious activities in the Information Security inbox.</p>
+</p>
+    <br>
+    <h2>Interests</h2>
+    <h5> Pictured below is a "hacker" in action. </h5>
+    <img src="Hacker.jpg" width="700" height="220" alt="Picture of Hacker" id="pic" />
+    
+    <p> I have a passion for cyber security.</p>
+	<p> I know that the cyber world is forever changing. I compare it to the field of medicine. There is always a new virus to find a cure for. In the world of cyber security, there is always a new malicious act that security professionals work towards mitigating. This is why I have such a passion to be able to work in real world situations, face new challenges daily and stop the bad guys. </p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
